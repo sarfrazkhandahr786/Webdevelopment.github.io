@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us</title>
+</head>
+<body>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">The Time Is</button>
+<p id="demo"></p>
+<button type="button" onclick="myfunction()">try me</button>
+<p id="length"></p>
+<script>
+	/*var person ={firstname:"lareb",lastname:"khan",age:"18",};
+
+	document.getElementById("demo").innerHTML = person.lastname+ " is" +person.age+ " years old.";
+	
+   var text = "larebdahrikhandahri422432342";
+   document.getElementById("demo").innerHTML = text.length;
+   
+   var x =10;
+   var y =20;
+
+   document.getElementById("length").innerHTML= x +"<br>" + y;
+   */
+   var points = [30,20,10,4,312,1312,312,1,12312,];
+
+   document.getElementById("length").innerHTML = points;
+
+   function myfunction(){
+   	points.sort(function(a,b) {return a -b})
+
+    document.getElementById('length').innerHTML = points;
+
+   }
+</script>
+</body>
+</html

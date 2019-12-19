@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<button type="button" onclick="document.getElementById('time').innerHTML =  Date()">Now See time currently</button>
+
+<P id="time"></P>
+
+<button onmouseout="myfun()">click me</button>
+
+<hr>
+<form  name="example">
+	<input type="text" name="calculater" size="20" >
+
+	<input type="button" name="b1" value="calculater" onclick="cal()">
+	<input type="reset" name="b2" value="reset">
+	Answer:<input type="text" name="answer" size="20">
+</form>
+
+<button type="" onclick="myFunction()">Try me</button>
+<p id="demo"></p>
+<script>
+	function myfun(){
+		document.write("wellcome bro");
+	}
+	
+    function cal(){
+    	document.example.answer.value=
+    	eval(document.example.calculater.value)
+    }
+
+  function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+
+
+}
+
+</script>
+</body>
+</html>

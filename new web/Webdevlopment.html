@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Web Divlopment</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+
+<header>
+<div class="container">
+	<ul class="ul-bar">
+		<i class="fa fa-home" aria-hidden="true" style="font-size: 20px"></i>
+        <li class="li-bar"><a href="#" class="a-bar">HOME</a></li>
+		<li class="li-bar"><a href="#" class="a-bar">COURSE</a></li>
+		<li class="li-bar"><a href="#team" class="a-bar">TEAM</a></li>
+		<li class="li-bar"><a href="#about" class="a-bar">ABOUT </a></li>
+		<li class="li-bar"><a href="#contact" class="a-bar">CONTACT</a></li>
+		<li class="li-bar li-join"><i class="fas fa-sign-in-alt" style="font-size: 20px;"></i><a href="#" class="a-bar a-join" onclick="openForm()">Join Us</a></li>
+	</ul>
+</div>
+</header>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1 style="text-align: center;">Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+     <a href="rigister.html" class="Rigester-a" target="_Blank" onclick="openform()">Rigester </a>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openform() {
+  document.getElementById("myForm").style.display = "block";   
+}
+</script>
+
+<br>
+
+<div class="w3-content w3-section" style="max-width:100%;margin-top: 45px;">
+  <img class="mySlides w3-animate-top" src="backg.jpeg" style="width:100%;height: 640px">
+  <img class="mySlides w3-animate-bottom" src="sliider.jpeg" style="width:100%;height: 640px">
+  <img class="mySlides w3-animate-top" src="slider1.jpeg" style="width:100%;height: 640px">
+  <img class="mySlides w3-animate-bottom" src="back.jpeg" style="width:100%;height: 640px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2700);    
+}
+</script>
+
+<main class="section">
+	<a href="" class="button button1">GET STARTED</a>
+</main>
+
+<div id="team">
+		<h3 class="our-team"><marquee direction="right">OUR TEAM</marquee></h3>
+<div class="card">
+  <img src="lareb.jpeg" alt="Avatar" style="width:100%;border-radius: 16px;height: 350px;">
+  <div class="container">
+    <h4><b>Sarfraz Kan dahri</b></h4> 
+    <p>Web Developer & Engineer</p> 
+  </div>
+</div>
+<div class="card">
+  <img src="https://live.staticflickr.com/1912/43913620465_1828a18af3_b.jpg" alt="Avatar" style="width:100%;  border-radius: 15px;height: 350px;">
+  <div class="container">
+    <h4><b>Lareb  Dahri</b></h4> 
+    <p>Web Developer & Engineer</p> 
+  </div>
+</div>
+<div class="card">
+  <img src="https://live.staticflickr.com/1912/43913620465_1828a18af3_b.jpg" alt="Avatar" style="width:100%;  border-radius: 15px;height: 350px;">
+  <div class="container">
+    <h4><b>sarfraz  Dahri</b></h4> 
+    <p>Web Developer & Engineer</p> 
+  </div>
+</div>
+</div>
+
+<div class="meter">
+  <span style="width: 25%"></span>
+</div>
+
+
+<div id="about">
+<main class="footer-nav">
+	<footer  class="footer">
+	<li class="footer-li"><a href="#" class="footer-a">services</a></li>
+	<li class="footer-li"><a href="#" class="footer-a">Portfolio</a></li>
+	<li class="footer-li"><a href="#" class="footer-a">Membership</a></li>
+	<li class="footer-li"><a href="#" class="footer-a">Certificate</a></li>
+	<li class="footer-li"><a href="#" class="footer-a">Teacher's</a></li>
+	<p class="p">Coppyrights &copy All Right Reserverd Create A Website 2020</p>
+	</footer>
+</main>
+</div>
+
+</body>
+</html
